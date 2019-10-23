@@ -1,0 +1,7 @@
+<input [(ngModel)]='inputName'>
+<input type='number' [(ngModel)]='inputSize'>
+<input type='button' value='Create planet' (click)='createPlanet()'>
+<div *ngFor='let planet of planetService.planets'>
+  <div>{{ planet.name }}</div>
+  <div>Size: {{ planet.size }}</div>
+</div>
